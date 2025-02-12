@@ -1,0 +1,306 @@
+body {
+    font-family: "Liter", serif;
+    background: linear-gradient(135deg, #f3b7e6, #c9d7f5); y /* Rosa y morado pastel */
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo suave */
+.bg-light {
+    background-color: #f7f7f7 !important;
+}
+
+.navbar {
+    background: rgba(31, 6, 6, 0.277) !important; /* Transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+/* Recuadro de color */
+.color-box {
+    height: 150px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilo del código hexadecimal */
+#hexCode {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Estilo para las tarjetas */
+.card {
+    border: none;
+    /* background: linear-gradient(135deg, #f3b7e6, #c9d7f5); Rosa y azul pastel */
+    border-radius: 50px !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1); /* Sombra más fuerte */
+    overflow: hidden;
+    transition: all 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hacer hover */
+}
+
+/* Estilo de los botones y controles */
+.form-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12px; /* Más grueso y moderno */
+    background: #d7aefb; /* Azul pastel */
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra interna sutil */
+    margin-bottom: 30px; /* Separación más grande respecto a los inputs */
+}
+
+.form-range:focus {
+    outline: none;
+    background: #a0c7e2; /* Azul pastel más fuerte */
+    box-shadow: 0 0 10px rgba(160, 199, 226, 0.6); /* Resaltado suave en enfoque */
+}
+
+.form-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px; /* Un poco más grande */
+    height: 24px;
+    background: #ff9b9b; /* Rosa pastel */
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+    border: 2px solid #fff; /* Borde blanco para destacar */
+    box-shadow: 0 0 5px rgba(255, 155, 155, 0.4); /* Sombra suave */
+    margin-top: -6px; /* Centramos la bolita en la línea */
+}
+
+.form-range::-webkit-slider-thumb:hover {
+    background: #ff7c7c; /* Rosa pastel más fuerte */
+    box-shadow: 0 0 8px rgba(255, 124, 124, 0.6); /* Efecto de sombra al hacer hover */
+}
+
+/* Input de número */
+.form-control-sm {
+    width: 100%; /* Hacemos el input más largo */
+    max-width: 300px; /* Máxima longitud para evitar que se estire demasiado */
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    background-color: #fffcf9; /* Fondo amarillo pastel */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 30px; /* Separación más grande respecto a los sliders */
+    text-align: left; /* Alineamos el texto a la izquierda */
+}
+
+.form-control-sm:focus {
+    border-color: #ff9b9b; /* Rosa pastel al hacer foco */
+    box-shadow: 0 0 10px rgba(255, 155, 155, 0.5); /* Sombra suave de enfoque */
+}
+
+/* Estilo para el selector de color */
+input[type="color"] {
+    -webkit-appearance: none; /* Eliminamos la apariencia por defecto del color */
+    appearance: none;
+    width: 100px; /* Hacemos el selector de color más grande */
+    height: 40px;
+    border-radius: 10px;
+    padding: 0;
+    margin-bottom: 30px; /* Separación de los demás elementos */
+    cursor: pointer;
+    border: none; /* Eliminamos el borde por defecto */
+}
+
+input[type="color"]:focus {
+    outline: none; /* Quitamos el borde al hacer foco */
+}
+
+/* Estilo para las tarjetas */
+.card-body {
+    padding: 2.5rem;
+    text-align: center;
+    position: relative;
+}
+
+/* Título de la tarjeta */
+.card-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+    font-family: "Sour Gummy", serif;;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra sutil en el texto */
+}
+
+/* Etiquetas de los controles */
+.form-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Sombra en la tarjeta */
+.shadow-lg {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaciado en la tarjeta */
+.card-body {
+    padding: 2.5rem;
+}
+
+/* Diseño en dispositivos pequeños */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    padding: 20px;
+}
+
+/* Agregar animaciones suaves */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Input de número */
+.form-control-sm {
+    width: 100%; /* Hacemos el input más largo */
+    max-width: 100%; /* Maximizamos el tamaño del input */
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    background-color: #fffcf9; /* Fondo amarillo pastel */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 30px; /* Separación más grande respecto a los sliders */
+    text-align: left; /* Alineamos el texto a la izquierda */
+}
+
+/* Alineación para inputs tipo número y decimal */
+input[type="number"], input[type="decimal"] {
+    text-align: left; /* Alineación del texto a la izquierda */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 100%; /* Aseguramos que no haya límite de ancho */
+}
+/* Título de la tarjeta */
+.card-title {
+    font-size: 2.5rem; /* Tamaño más grande */
+    font-weight: 700; /* Peso de fuente más fuerte */
+    color: #333;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.card-title:hover {
+    transform: translateY(-5px); /* Efecto de movimiento al pasar el ratón */
+    color: #da099b; /* Cambio de color a rosa pastel */
+}
+
+/* Título principal */
+h1, h2, h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out; /* Transición suave al cambiar color */
+}
+
+h1:hover, h2:hover, h3:hover {
+    color: #ff7c7c; /* Color cuando el mouse pasa por encima */
+}
+
+/* Subtítulo */
+.card-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+
+/* Títulos de secciones */
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4b4b4b;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff9b9b; /* Línea debajo del título */
+}
+
+/* Efecto de enfoque al pasar el ratón */
+.section-title:hover {
+    color: #09adda;
+    transform: translateY(-3px); /* Efecto sutil de desplazamiento hacia arriba */
+}
+
+/* Estilo para el footer */
+.footer {
+    background: rgba(31, 6, 6, 0.277); /* Transparente con desenfoque */
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    font-family: "Liter", serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+.footer p:hover {
+    opacity: 1;
+    color: #ff9b9b; /* Rosa pastel al pasar el mouse */
+    transition: color 0.3s ease-in-out;
+}
